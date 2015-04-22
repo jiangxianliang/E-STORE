@@ -17,7 +17,7 @@ The usage of the server:
   - ./main
 
 The usage of the client:
-  - Set your server's IP address in ReceiveFive.java, uploadFeatures.java and UploadPicActivity.java.
+  - Set the IP address of your server in ReceiveFive.java, uploadFeatures.java and UploadPicActivity.java.
   - Install the app into your mobile phone.
 
 ### Contact
