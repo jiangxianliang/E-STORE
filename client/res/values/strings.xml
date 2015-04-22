@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<string name="host">115.156.208.146</string>
+    <string name="app_name">E-store</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="to_top">[返回根目录]</string>
+</resources>

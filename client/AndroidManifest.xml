@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.clientdesign"
+    android:versionCode="1"
+    android:versionName="1.0" >
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.clientdesign.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.clientdesign.SearchActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.clientdesign.SEARCH_ACTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.clientdesign.UploadActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.clientdesign.UPLOAD_ACTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+         <activity
+            android:name="com.example.andsifttest1.SiftActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.andsifttest1.ImageFeature"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.andsifttest1.ImageFeatureExtractor"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.andsifttest1.Bloom_t"
+            android:label="@string/app_name" >
+            </activity>
+            <activity
+            android:name="com.example.andsifttest1.Bloom"
+            android:label="@string/app_name" >
+                </activity>
+                <activity
+            android:name="com.example.andsifttest1.Hash_table"
+            android:label="@string/app_name" >
+            </activity>
+            <activity
+            android:name="com.example.andsifttest1.Hash"
+            android:label="@string/app_name" >
+            </activity>
+            <activity
+            android:name="com.example.andsifttest1.MyPublic"
+            android:label="@string/app_name" >
+            </activity>
+            <activity
+            android:name="com.example.andsifttest1.Pic_struct"
+            android:label="@string/app_name" >
+            </activity>
+
+            <activity
+            android:name="com.example.clientdesign.UploadPicture"
+            android:label="@string/app_name" >
+            </activity>
+            <activity
+            android:name="com.example.clientdesign.RecvFiveActivity"
+            android:label="@string/app_name" >
+            </activity>
+            <activity
+            android:name="com.example.clientdesign.UploadPicActivity"
+            android:label="@string/app_name" >
+            </activity>
+            <activity
+            android:name="com.example.logic.ImgFileListActivity"
+            android:label="@string/app_name" >
+            </activity>
+            <activity
+            android:name="com.example.logic.ImgsActivity"
+            android:label="@string/app_name" >
+            </activity>
+    </application>
+
+</manifest>

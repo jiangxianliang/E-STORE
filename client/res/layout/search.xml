@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#FFF0F8FF">
+	<LinearLayout
+ 	   android:orientation="vertical" 
+ 	   android:layout_width="fill_parent"
+ 	   android:layout_height="wrap_content">  
+		<ImageView 
+		    
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:src="@drawable/logo"
+			android:layout_marginBottom="10dp"
+			android:background="#FFF0F8FF"/>
+	</LinearLayout>
+
+	<LinearLayout android:orientation="horizontal"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="12dp"
+	    android:layout_marginBottom="6dp">
+		
+			<TextView android:text="图片路径："
+				android:id="@+id/TextView"
+			    android:textStyle="bold"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content">
+			</TextView>
+			<EditText android:text="" 
+			    android:id="@+id/picPathEditText"
+			    android:singleLine="true"
+    			android:ellipsize="middle"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content">
+			</EditText>
+	</LinearLayout>
+
+	<LinearLayout android:orientation="horizontal" 
+	    android:layout_marginBottom="10dp"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content">	
+			<Button android:text="选择图片" 
+			    android:id="@+id/selectButton"
+			    android:layout_weight="1"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+        		android:layout_marginRight="5dp"
+				android:background="#FF339966">			
+			</Button>
+			<Button android:text="查询" 
+			    android:id="@+id/submitPicButton"
+			     android:layout_weight="1"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+   			     android:layout_marginRight="5dp"
+				android:background="#FF339966">	    
+			</Button>
+	</LinearLayout>
+		
+	<ImageView 
+	    android:id="@+id/ImageView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"/>
+	<TextView 
+				android:id="@+id/tvBatteryLevel"
+				android:layout_width="0dp" 
+				android:layout_height="0dp">
+			</TextView>
+</LinearLayout>

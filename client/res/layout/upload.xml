@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#FFF0F8FF">
+
+	<LinearLayout
+  	 	 android:orientation="vertical" 
+  	     android:layout_width="fill_parent"
+    	 android:layout_height="wrap_content">  
+		<ImageView 
+		   
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:src="@drawable/logo"
+			android:layout_marginBottom="10dp"
+			android:background="#FFF0F8FF"/>
+	</LinearLayout>
+
+
+	<LinearLayout android:orientation="horizontal" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content">	
+			<Button android:text="选择图片" 
+			    android:id="@+id/ulSelectButton"
+			     android:layout_weight="1"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="10dp"
+				android:layout_marginLeft="5dp"
+   			     android:layout_marginRight="5dp"
+				android:background="#FF339966">			
+			</Button>
+			<Button android:text="上传" 
+			    android:id="@+id/ulSubmitPicButton"
+			     android:layout_weight="1"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+   			     android:layout_marginRight="5dp"
+				android:background="#FF339966">	    
+			</Button>
+	</LinearLayout>
+		
+	<ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        android:layout_below="@+id/button1" >
+    </ListView>
+</LinearLayout>
