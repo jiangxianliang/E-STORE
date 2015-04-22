@@ -22,5 +22,5 @@ The usage of the client:
 
 ### Contact
 --
-Email:  pfzuo@hust.edu.cn
+Email:  pfzuo@hust.edu.cn  
 If you have any questions, please feel free to contact me.
