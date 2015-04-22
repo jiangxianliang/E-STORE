@@ -3,22 +3,24 @@
 E-STORE is  a real-time image sharing system. E-STORE consists of an Android APP installed on the smartphones and a remote server in cloud.
 
 ### Server
+----
+The server is written in C language in a Linux environment. The server uses [flann](http://www.cs.ubc.ca/research/flann/) for the kd-tree match. The index structure in  the server is [Nest](https://github.com/rightpeter/DSSE.git). The image library is in the folder ./trace/image_keypoint.
 
-The server  is written in C language in a Linux environment. Apart from this, the server uses [flann](http://www.cs.ubc.ca/research/flann/) for the kd-tree match.
+### Client
+----
+The client is written in Java in an Android environment. The client uses [SIFT](http://en.wikipedia.org/wiki/Scale-invariant_feature_transform) algorithm to extrat the local features of images. 
 
 ### Usage
-
-The usage of the server: `./main`
-  - first the server build a image library
-  - the small trace is under the `./trace/image_keypoint`. 
-  - then the server is listening.
+----
+The usage of the server:
+  - make
+  - ./main
 
 The usage of the client:
-  - you need to use the eclipse to open the project, find out the server's ip address.
-  - change the ip address in the cell phone client. 
-  - install the app into your cellphone.
+  - Set your server's ip address in ReceiveFive.java, uploadFeatures.java and UploadPicActivity.java.
+  - Install the app into your mobile phone.
 
 ### Contact
-
+----
 If any questions, please contact me: pfzuo@hust.edu.cn  
 Please feel free to contact me for details.
